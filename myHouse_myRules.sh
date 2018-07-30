@@ -33,10 +33,10 @@ iptables -P OUTPUT DROP
 iptables -P FORWARD DROP
 
 echo ; echo "Enable loopback interface"
-iptables -A INPUT -i lo -j ACCEPT
+iptables -A INPUT  -i lo -j ACCEPT
 iptables -A OUTPUT -o lo -j ACCEPT
 
-echo ;  echo "Handle Sessions"
+echo ;  echo "Handle State Sessions"
 
 
 
